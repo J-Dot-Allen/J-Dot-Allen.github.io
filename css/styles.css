@@ -1,6 +1,7 @@
 
 
 /* Media Queries */
+/* laptop layout */
 @media only screen and (min-width: 600px) {
   html {
     scroll-padding-top: 63px
@@ -27,11 +28,35 @@
   .home-wrapper {
       margin-top: 63px;
   }
+}
+
+@media only screen and (min-width: 900px) {
+  .event-detail {
+  width: 175px;
+}
   .event-subitem {
-    padding: 20px 15px;
+    padding: 20px 15px 20px;
+  }
+}
+@media only screen and (max-width: 900px) {
+    .event-detail {
+    width: 120px;
+  }
+  .event-subitem {
+    padding: 15px 15px 15px;
   }
 }
 
+@media only screen and (max-width: 700px) {
+  .event-detail {
+  width: 120px;
+}
+  .event-subitem {
+    padding: 5px 15px 5px;
+  }
+}
+
+/* mobile layout */
 @media only screen and (max-width: 600px) {
   html {
     scroll-padding-top: 189.6px
@@ -65,9 +90,11 @@
   .home-wrapper {
       margin-top: 45px;
   }
+  .event-detail {
+  width: 100px;
+}
   .event-subitem {
-    padding: 5px 15px;
-    font-size: small;
+    padding: 5px 15px 5px;
   }
 }
 
@@ -245,12 +272,11 @@ main {
 }
 
 .event-details-wrapper {
-
 }
 
 .event-detail {
   display: inline-block;
-  width: 175px;
+  vertical-align: middle;
 }
 
 .event-tickets {
@@ -258,7 +284,11 @@ main {
   align-items: center;
 }
 
-.ticket-button {
+a.ticket-link {
+  width: 64.43px;
+}
+
+input.ticket-button {
   background-color: black;
   border: solid white 1px;
   color: white;
