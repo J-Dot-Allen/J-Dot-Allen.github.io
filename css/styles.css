@@ -3,7 +3,7 @@
 /* Media Queries */
 @media only screen and (min-width: 600px) {
   html {
-    scroll-padding-top: 70px
+    scroll-padding-top: 63px
   }
   h1 {
     padding: 20px;
@@ -11,13 +11,13 @@
     font-size: 2rem;
   }
   nav {
-    height: 70px;
+    height: 63px;
   }
   .nav-mobile {
     display: none;
   }
   .socials {
-    margin-top: 70px;
+    margin-top: 63px;
   }
   ul.socials-list li a img {
     display: block;
@@ -25,7 +25,7 @@
     width: 40px;
   }
   .home-wrapper {
-      margin-top: 70px;
+      margin-top: 63px;
   }
   .event-subitem {
     padding: 20px 15px;
@@ -267,7 +267,7 @@ main {
 }
 
 .ticket-button:hover {
-  background-color: lightgrey;
+  background-color: darkgrey;
   cursor: pointer;
 }
 
