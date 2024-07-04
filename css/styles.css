@@ -2,7 +2,7 @@
 
 /* Media Queries */
 /* laptop layout */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 840px) {
   html {
     scroll-padding-top: 63px
   }
@@ -25,39 +25,15 @@
     margin: 0 10px 20px;
     width: 40px;
   }
+  /*
   .home-wrapper {
       margin-top: 63px;
-  }
+  }*/
 }
 
-@media only screen and (min-width: 900px) {
-  .event-detail {
-  width: 175px;
-}
-  .event-subitem {
-    padding: 20px 15px 20px;
-  }
-}
-@media only screen and (max-width: 900px) {
-    .event-detail {
-    width: 120px;
-  }
-  .event-subitem {
-    padding: 15px 15px 15px;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .event-detail {
-  width: 120px;
-}
-  .event-subitem {
-    padding: 5px 15px 5px;
-  }
-}
 
 /* mobile layout */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 840px) {
   html {
     scroll-padding-top: 189.6px
   }
@@ -67,7 +43,7 @@
     font-size: 1.5rem;
   }
   nav {
-    height: 45px;
+    height: 50px;
   }
   .nav-list {
     display: none;
@@ -87,15 +63,10 @@
     width: 20px;
     margin: auto 0;
   }
+  /*
   .home-wrapper {
-      margin-top: 45px;
-  }
-  .event-detail {
-  width: 100px;
-}
-  .event-subitem {
-    padding: 5px 15px 5px;
-  }
+      margin-top: 50px;
+  }*/
 }
 
 /* Fonts */
@@ -124,7 +95,6 @@
 
 html * {
   font-family: Futura_Book;
-  text-transform: uppercase;
   color: white;
 }
 
@@ -132,6 +102,10 @@ body {
   padding: 0;
   margin: 0;
   background-color: black;
+}
+
+div {
+    font-size: 1.3rem;
 }
 
 h1 {
@@ -164,10 +138,19 @@ a.anchor {
     visibility: hidden;
 }
 
-.hamburger_icon {
-  stroke: white;
-  fill: white;
-}
+.button {
+      background-color: #303030;
+      border: none;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      border-radius: 4px;
+      font-size: 1.5rem;
+    }
 
 
 /* navbar */
@@ -180,10 +163,15 @@ nav {
   z-index: 2;
 }
 
+.hamburger_icon {
+  stroke: white;
+  fill: white;
+}
+
 .nav_toggle {
   position: absolute;
   right: 0;
-  margin: 10px;
+  margin: 5px 20px;
   cursor: pointer;
 }
 .nav_checkbox {
@@ -205,6 +193,7 @@ nav {
   align-items: center;
   display: none;
   padding: 10px 0 10px;
+  border-bottom: 1px solid gray;
 }
 
 ul.nav-list li {
@@ -214,30 +203,6 @@ ul.nav-list li {
 
 ul.nav-list li a {
   padding: 25px 30px 10px;
-}
-
-/* socials */
-.socials {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 3;
-}
-
-ul.socials-list {
-
-}
-
-ul.socials-list li a {
-  margin: 10px;
-}
-
-ul.socials-list li a img {
-  display: block;
-}
-
-.instagram_logo_2_invert {
-  filter: invert();
 }
 
 /* main */
@@ -255,106 +220,39 @@ main {
   z-index: 1;
 }
 
-.band-img {
+.cover-img {
   width: 100%;
 }
 
-/* tour */
-.events-wrapper {
-  border-top: white 1px solid;
+
+/* Konzept */
+
+.konzept {
+    text-align: center;
 }
 
-.event {
-  border-bottom: white 1px solid;
-  border-collapse: separate;
-  display: flex;
-  justify-content: space-between;
-}
-
-.event-details-wrapper {
-}
-
-.event-detail {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.event-tickets {
-  display: flex;
-  align-items: center;
-}
-
-a.ticket-link {
-  width: 64.43px;
-}
-
-input.ticket-button {
-  background-color: black;
-  border: solid white 1px;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-}
-
-.ticket-button:hover {
-  background-color: darkgrey;
-  cursor: pointer;
-}
-
-.tourbox-wrapper {
-  display: none;
+p.konzept {
+    font-size: 1.5rem;
 }
 
 /* music */
 .music-wrapper {
 }
 
-.streaming-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+
+/* anmelden */
+.anmelden {
+    text-align: center;
 }
 
-.spotify-wrapper {
-  padding: 5px;
-  height: 400px;
-}
-
-.spotify-window {
-  height: 100%;
-  width: 100%;
-}
-
-.tidal-wrapper {
-  padding: 5px;
-  height: 400px;
-}
-
-.tidal-window{
-  height: 400px;
-}
-
-.youtube-wrapper {
-  margin-top: 50px;
-  position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;
-
-}
-
-.youtube-window {
-  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-  display: block;
-  margin: 0 auto;
-}
-
-/* merch */
-.merch-gallery {
+/* gallery */
+.gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.merch-img {
+.gallery-img {
   border: solid white 2px;
   display: block;
   height: 300px;
@@ -369,6 +267,7 @@ input.ticket-button {
 footer {
   text-align: center;
   padding: 10px 0 10px;
+  margin-top: 40px;
 }
 
 .imp_checkbox {
@@ -415,4 +314,93 @@ p.imp {
   font-size: 0.7rem;
   margin: 0;
   padding: 5px 0 5px;
+}
+
+
+/* overlay */
+
+.overlay-container {
+  position: relative;
+  width: 344px;
+  height: 344px;
+}
+
+.image {
+  display: block;
+  width: 300px;
+  margin
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  margin: 20px;
+  border: solid white 2px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #b1facd;
+}
+
+.overlay-container:hover .overlay {
+  opacity: 0.8;
+}
+
+.overlay-text {
+  color: grey;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* faq accordion */
+.accordion-container h1{
+  color: #fff;
+  text-align: center;
+}
+
+details{
+  background-color: #303030;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+summary {
+  padding: .5em 1.3rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  transition: height 1s ease;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after{
+  content: "\002B";
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+details[open] summary:after{
+  content: "\00D7";
+}
+
+details[open] div{
+  padding: .5em 1em;
+  font-size: 1.3rem;
 }
