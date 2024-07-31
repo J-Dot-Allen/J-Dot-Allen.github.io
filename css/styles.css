@@ -376,11 +376,14 @@ details{
 }
 
 summary {
+  color: #211921;
   padding: .5em 1.3rem;
   list-style: none;
   display: flex;
   justify-content: space-between;
   transition: height 1s ease;
+  background-color: #b1facd;
+  border: solid;
 }
 
 summary::-webkit-details-marker {
