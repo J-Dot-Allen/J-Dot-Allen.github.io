@@ -69,14 +69,35 @@
           </div>
       </div>
 
-      <!--<div class="impressionen">
+      <div class="impressionen">
         <div class="slideshow">
-            <img class="slides" src="img_snowtops.jpg">
-            <img class="slides" src="img_lights.jpg">
-            <img class="slides" src="img_mountains.jpg">
-            <img class="slides" src="img_forest.jpg">
+            <img class="slides" src="images/hammock.jpeg">
+            <img class="slides" src="images/party.jpeg">
+            <!--<img class="slides" src="images/djs.jpeg">-->
+            <img class="slides" src="images/camping.jpeg">
+            <!--<img class="slides" src="images/yoga.jpeg">-->
+            <img class="slides" style="object-position: 50% 30%" src="images/der.jpeg">
+            <!--<img class="slides" src="images/deko2.jpeg">
+            <img class="slides" style="object-position: 50% 40%" src="images/bar.jpeg">-->
+            <!--<img class="slides" src="images/whoolahoop.jpeg">-->
         </div>
-      </div>-->
+        <script type="text/javascript">
+            var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("slides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > x.length) {slideIndex = 1}
+              x[slideIndex-1].style.display = "block";
+              setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+      </div>
           
         <div class="anmelden" id="anmelden">
           <h1>Dabei sein</h1>
