@@ -25,10 +25,12 @@
     margin: 0 10px 20px;
     width: 40px;
   }
-  /*
+  
   .home-wrapper {
-      margin-top: 63px;
-  }*/
+    margin: 0 auto;
+    width: 75%;
+     /* margin-top: 63px;*/
+  }
 }
 
 
@@ -104,6 +106,10 @@ body {
   background-color: black;
 }
 
+main {
+  background-color: #E34234;
+}
+
 div {
     font-size: 1.3rem;
 }
@@ -126,13 +132,13 @@ p {
 }
 
 a {
-  display: block;
+  display: inline-block;
   color: inherit;
   text-decoration: none;
 }
 
 a.anchor {
-    display: block;
+    display: inline-block;
     position: relative;
     top: -250px;
     visibility: hidden;
@@ -150,6 +156,7 @@ a.anchor {
       margin: 4px 2px;
       border-radius: 4px;
       font-size: 1.5rem;
+      cursor: pointer;
     }
 
 
@@ -384,14 +391,15 @@ details{
 }
 
 summary {
-  color: #211921;
+  color: white;
   padding: .5em 1.3rem;
   list-style: none;
   display: flex;
   justify-content: space-between;
   transition: height 1s ease;
-  background-color: #b1facd;
+  background-color: #E34234;
   border: solid;
+  cursor: pointer;
 }
 
 summary::-webkit-details-marker {
