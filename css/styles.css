@@ -127,7 +127,7 @@ p {
 
 a {
   display: block;
-  color: inherit;
+  color: darkred;
   text-decoration: none;
 }
 
@@ -218,6 +218,14 @@ main {
   transform: translate(-50%, 20%);
   width: 60%;
   z-index: 1;
+}
+
+.home {
+  text-align: center;
+}
+
+p.home {
+    font-size: 1.5rem;
 }
 
 .cover-img {
