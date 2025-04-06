@@ -127,7 +127,7 @@ p {
 
 a {
   display: block;
-  color: darkred;
+  color: inherit;
   text-decoration: none;
 }
 
