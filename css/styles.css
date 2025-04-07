@@ -147,9 +147,9 @@ a.anchor {
 }
 
 .button {
-      background-color: #303030;
+      background-color: yellow;
       border: none;
-      color: white;
+      color: #E34234;
       padding: 20px;
       text-align: center;
       text-decoration: none;
@@ -159,6 +159,21 @@ a.anchor {
       border-radius: 4px;
       font-size: 1.5rem;
       cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: lightyellow;
+      font-size: 130%;
+    }
+
+  .button-style {
+    color: #E34234;
+    background-color: yellow;
+  }
+
+  .button-style:hover {
+      background-color: lightyellow;
+      font-size: 130%;
     }
 
 
