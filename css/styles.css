@@ -281,7 +281,7 @@ details[open] div {
 .slides {
   display: block;
   width: 100%;
-  max-height: 500px;
+  max-height: 600px;
   min-height: 400px;
   object-fit: cover;
 }
