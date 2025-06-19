@@ -245,14 +245,14 @@ summary {
   justify-content: space-between;
   transition: height 1s ease;
   background-color: #e34234;
-  border: solid white;
+  border: 2px solid white;
   border-bottom: none;
   cursor: pointer;
   font-size: 1.2rem;
 }
 
 details:last-of-type > summary {
-  border-bottom: solid white;
+  border-bottom: 2px solid white;
 }
 
 summary::-webkit-details-marker {
@@ -270,7 +270,7 @@ details {
 
 details[open] summary {
   margin-bottom: 0.5em;
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid white;
 }
 
 details[open] summary:after {
