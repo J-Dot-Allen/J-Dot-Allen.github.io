@@ -45,7 +45,7 @@ h2 {
 }
 
 h3 {
-  padding: 60px 0 0px;
+  padding: 60px 0 5px;
 }
 
 ul {
@@ -87,7 +87,7 @@ a.anchor {
   text-align: center;
   font-size: 1.5rem;
   margin: 4px 2px;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
@@ -251,6 +251,10 @@ summary {
   font-size: 1.2rem;
 }
 
+summary:hover {
+  color: yellow;
+}
+
 details:last-of-type > summary {
   border-bottom: 2px solid white;
 }
@@ -282,6 +286,147 @@ details[open] div {
   font-size: 1.2rem;
 }
 
+/* ========== Musik ========== */
+.musik-wrapper {
+  margin: 0px auto 30px;
+  width: 95%;
+}
+.musik {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+#musik h2 {
+  padding-bottom: 30px;
+}
+
+.musik-card,
+.tba-card {
+  flex: 0 0 200px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.musik-card img,
+.tba-card .tba-placeholder {
+  border: solid 2px yellow;
+  width: 100%;
+  border-radius: 8px;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  background-color: rgba(48, 48, 48, 0.6);
+}
+
+.tba-card .tba-placeholder {
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.musik-card p,
+.tba-card p {
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}
+
+.musik-card:hover p {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.musik-card:hover img {
+  transform: scale(1.02);
+  /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35); */
+}
+
+/* Modul */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  z-index: 1000;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-content {
+  background: yellow;
+  padding: 2rem;
+  border: solid 5px #e34234;
+  border-radius: 12px;
+  max-width: 550px;
+  width: 90%;
+  position: relative;
+  max-height: 80vh; /* Inhalt darf maximal 90 % der Bildschirmhöhe einnehmen */
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.modal-content h2 {
+  color: #303030;
+  padding: 0;
+}
+.modal-content p {
+  color: #303030;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.modal-content a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
+
+.modal-content hr {
+  border: none;
+  border-top: 1px solid #e34234;
+  margin: 1.5rem 0;
+}
+
+.modal-content .last {
+  padding-bottom: 0px;
+}
+
+.close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #303030;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.links a:hover {
+  color: #e34234;
+}
+
 /* ========== Slide Images ========== */
 .slides {
   display: block;
@@ -307,9 +452,9 @@ details[open] div {
   }
 
   .home-wrapper {
-    margin: 10px auto 50px;
+    margin: 10px auto 0px;
     padding-top: 20px;
-    width: 75%;
+    width: 80%;
   }
 
   .socials {
@@ -338,12 +483,18 @@ details[open] div {
   }
 
   .home-wrapper {
-    margin: 10px auto 50px;
+    margin: 10px auto 0px;
     padding-top: 20px;
-    width: 75%;
+    width: 85%;
   }
 
   h1 {
     padding: 30px 0 40px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 }
