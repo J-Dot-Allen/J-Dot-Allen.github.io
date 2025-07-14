@@ -251,10 +251,6 @@ summary {
   font-size: 1.2rem;
 }
 
-summary:hover {
-  color: yellow;
-}
-
 details:last-of-type > summary {
   border-bottom: 2px solid white;
 }
@@ -376,7 +372,7 @@ details[open] div {
   max-width: 550px;
   width: 90%;
   position: relative;
-  max-height: 80vh; /* Inhalt darf maximal 90 % der Bildschirmhöhe einnehmen */
+  max-height: 80dvh;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
@@ -485,7 +481,7 @@ details[open] div {
   .home-wrapper {
     margin: 10px auto 0px;
     padding-top: 20px;
-    width: 85%;
+    width: 75%;
   }
 
   h1 {
