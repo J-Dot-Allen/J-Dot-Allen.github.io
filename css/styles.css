@@ -300,15 +300,15 @@ details[open] div {
 
 .musik-card,
 .tba-card {
-  flex: 0 0 200px;
+  flex: 0 0 300px;
   text-align: center;
   cursor: pointer;
 }
 
 .musik-card img,
 .tba-card .tba-placeholder {
-  border: solid 2px yellow;
-  width: 100%;
+  border: solid 4px yellow;
+  width: 300px;
   border-radius: 8px;
   user-drag: none;
   -webkit-user-drag: none;
@@ -331,7 +331,6 @@ details[open] div {
 
 .musik-card p,
 .tba-card p {
-  font-size: 1rem;
   margin-top: 0.2rem;
 }
 
@@ -356,7 +355,7 @@ details[open] div {
   background-color: rgba(0, 0, 0, 0.6);
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 2.5rem;
   z-index: 1000;
 }
 
