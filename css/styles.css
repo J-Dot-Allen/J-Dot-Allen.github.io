@@ -376,11 +376,11 @@ details[open] div {
   -webkit-overflow-scrolling: touch;
 }
 .modal-content h2 {
-  color: #303030;
+  color: black;
   padding: 0;
 }
 .modal-content p {
-  color: #303030;
+  color: black;
   padding-bottom: 15px;
   text-align: center;
 }
@@ -491,5 +491,11 @@ details[open] div {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 693px) {
+  .tba-card {
+    display: none;
   }
 }
