@@ -135,6 +135,52 @@
           <h2>Musik</h2>
           <div class="musik">
             <!-- Artist Cards -->
+            <!-- Adrian Knetsch -->
+            <div class="musik-card" onclick="openModal('modal-adrian-knetsch')">
+              <picture>
+                <source
+                  srcset="images/cropped/musik/adrian_knetsch.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="images/cropped/musik/adrian-knetsch.jpg"
+                  alt="Adrian Knetsch"
+                />
+              </picture>
+              <p>Adrian Knetsch</p>
+            </div>
+            <div
+              id="modal-adrian-knetsch"
+              class="modal"
+              onclick="closeModal(event)"
+            >
+              <div class="modal-content" onclick="event.stopPropagation()">
+                <button class="close" onclick="closeModal(event)">
+                  &times;
+                </button>
+                <h2>Adrian Knetsch</h2>
+                <p class="last">House, Minimal, Groove</p>
+                <hr />
+                <p class="last">Adrian Knetsch aus D-Wetzlar</p>
+                <!-- <hr />
+                <p class="last links">
+                  <a href="https://heinrich.band" target="_blank">Web</a>
+                  <a
+                    href="https://www.instagram.com/dasheinrichmanoever"
+                    target="_blank"
+                    >Instagram</a
+                  >
+                  <a href="https://norden.social/@heinrich" target="_blank"
+                    >Mastodon</a
+                  >
+                  <a
+                    href="https://www.youtube.com/@dasheinrichmanoever"
+                    target="_blank"
+                    >YouTube</a
+                  >
+                </p> -->
+              </div>
+            </div>
             <!-- Das Heinrich Manöver -->
             <div class="musik-card" onclick="openModal('modal-heinrich')">
               <picture>
@@ -300,6 +346,95 @@
                 </p>
               </div>
             </div>
+            <!-- Erdgeschosswohnung -->
+            <div
+              class="musik-card"
+              onclick="openModal('modal-erdgeschosswohnung')"
+            >
+              <picture>
+                <source
+                  srcset="images/cropped/musik/erdgeschosswohnung.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="images/cropped/musik/erdgeschosswohnung.jpg"
+                  alt="Erdgeschosswohnung"
+                />
+              </picture>
+              <p>Erdgeschosswohnung</p>
+            </div>
+            <div
+              id="modal-erdgeschosswohnung"
+              class="modal"
+              onclick="closeModal(event)"
+            >
+              <div class="modal-content" onclick="event.stopPropagation()">
+                <button class="close" onclick="closeModal(event)">
+                  &times;
+                </button>
+                <h2>Erdgeschosswohnung</h2>
+                <p class="last">Deep House, Glitch, Andere</p>
+                <hr />
+                <p>
+                  Der Makler sagt: 65 m², 2 Zimmer, Küche, Bad, schickes House,
+                  500 € warm. Du ziehst ein, soweit alles normal.
+                </p>
+                <p>
+                  Doch irgendwann glitchst du durch die Küche, hörst
+                  Kinderlieder aus irgendeinem Zimmer und denkst nur “What the
+                  fuck”!
+                </p>
+                <p class="last">Aber doch ein guter Preis...</p>
+                <!-- <hr />
+                <p class="last links">
+                  <a href="https://google.com" target="_blank">Web</a>
+                </p> -->
+              </div>
+            </div>
+            <!-- Fräulein Frida -->
+            <div class="musik-card" onclick="openModal('modal-fraulein-frida')">
+              <picture>
+                <source
+                  srcset="images/cropped/musik/fraulein_frida.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="images/cropped/musik/fraulein_frida.jpg"
+                  alt="Fräulein Frida"
+                />
+              </picture>
+              <p>Fräulein Frida</p>
+            </div>
+            <div
+              id="modal-fraulein-frida"
+              class="modal"
+              onclick="closeModal(event)"
+            >
+              <div class="modal-content" onclick="event.stopPropagation()">
+                <button class="close" onclick="closeModal(event)">
+                  &times;
+                </button>
+                <h2>Fräulein Frida</h2>
+                <p class="last">Techno, Kein Techno</p>
+                <hr />
+                <p>
+                  Nach dem Studium der klassischen Gitarre an der Universität
+                  der Künste Berlin, war Fridas Weg als Techno-DJ bereits
+                  vorgezeichnet. Als noch junger Stern am Berliner Clubhimmel
+                  wurde Fridas Sound in den letzten 10 Jahren auf mehr als einer
+                  WG-Party gefeiert.
+                </p>
+                <p class="last">
+                  Nur gestoppt durch die Corona-Pandemie ist Frida nun endlich
+                  zurück, um den Tisch nach allen Maßstäben der Kunst
+                  auseinander zu nehmen.
+                </p>
+                <!-- <hr />
+                <p class="last links">
+                  <a href="https://google.com" target="_blank">Web</a>
+                </p> -->
+              </div>
+            </div>
             <!-- Markus Sommer -->
             <div class="musik-card" onclick="openModal('modal-markus-sommer')">
               <picture>
@@ -421,12 +556,87 @@
                 </p>
               </div>
             </div>
+            <!-- Noah -->
+            <div class="musik-card" onclick="openModal('modal-noah')">
+              <picture>
+                <source
+                  srcset="images/cropped/musik/noah.webp"
+                  type="image/webp"
+                />
+                <img src="images/cropped/musik/noah.jpg" alt="NOah" />
+              </picture>
+              <p>NOah</p>
+            </div>
+            <div id="modal-noah" class="modal" onclick="closeModal(event)">
+              <div class="modal-content" onclick="event.stopPropagation()">
+                <button class="close" onclick="closeModal(event)">
+                  &times;
+                </button>
+                <h2>NOah</h2>
+                <p class="last">Techno, Not only Techno</p>
+                <hr />
+                <p class="last">
+                  Sharing music with friends. Techno, faster Techno, but not
+                  only Techno.
+                </p>
+                <hr />
+                <p class="last links">
+                  <a href="https://soundcloud.com/neoteny-hd" target="_blank"
+                    >SoundCloud</a
+                  >
+                </p>
+              </div>
+            </div>
+            <!-- Thunder Shart & Dreck -->
+            <div class="musik-card" onclick="openModal('modal-shart-dreck')">
+              <picture>
+                <source
+                  srcset="images/cropped/musik/thunder_shart_dreck.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="images/cropped/musik/thunder_shart_dreck.jpg"
+                  alt="Thunder Shart & Dreck"
+                />
+              </picture>
+              <p>Thunder Shart & Dreck</p>
+            </div>
+            <div
+              id="modal-shart-dreck"
+              class="modal"
+              onclick="closeModal(event)"
+            >
+              <div class="modal-content" onclick="event.stopPropagation()">
+                <button class="close" onclick="closeModal(event)">
+                  &times;
+                </button>
+                <h2>Thunder Shart & Dreck</h2>
+                <p class="last">80s, 90s and 2000s</p>
+                <hr />
+                <p>Zero clue, one mission: survive the transition. Somehow.</p>
+                <p class="last">
+                  Technically questionable - but a shamelessly good song
+                  selection. This is where your deepest guilty pleasures come
+                  out to play.
+                </p>
+                <!-- <hr />
+                <p class="last links">
+                  <a href="https://google.com" target="_blank">Web</a>
+                </p> -->
+              </div>
+            </div>
+            <!-- TBA -->
+            <div class="tba-card">
+              <div class="tba-placeholder">...</div>
+              <p>TBA</p>
+            </div>
             <!-- TBA -->
             <div class="tba-card">
               <div class="tba-placeholder">...</div>
               <p>TBA</p>
             </div>
           </div>
+
           <!-- Modal JS -->
           <script>
             function openModal(id) {
